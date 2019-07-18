@@ -1,22 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-let arr = [[23, 32], [69, 96]];
+let Header = () => <header>Header<Navigation /></header>;
+let Navigation = () => <nav>Navigation</nav>;
+let Content = () => <p>Content</p>;
+let Aside = () => <aside>Aside</aside>;
+let Footer = () => <footer>Footer</footer>;
 
-function createReactTable(data, container) {
-    ReactDOM.render(<table id='table'>
-        <tbody>
-            <tr>
-                <td>{data[0][0]}</td>
-                <td>{data[0][1]}</td>
-            </tr>
-            <tr>
-                <td>{data[1][0]}</td>
-                <td>{data[1][1]}</td>
-            </tr>
-        </tbody>
-    </table>,
-        document.getElementById(container));
-};
+let App = () => {
+    return (
+        <>
+            <Header />
+            <Content />
+            <Aside />
+            <Footer />
+        </>
 
-createReactTable(arr, 'div1');
+    )
+}
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('div1')
+);
