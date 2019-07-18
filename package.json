@@ -4,7 +4,8 @@
   "description": "Задание №1.\r Создайте следующую иерархию компонент:\r App\r    Header\r       Navigation\r    Content\r    Aside\r    Footer\r Содержимое компонент – произвольное.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
